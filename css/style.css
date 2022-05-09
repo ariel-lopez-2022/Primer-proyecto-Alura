@@ -47,6 +47,9 @@ header h2{
     justify-content:center;
     align-items: center;
 }
+.imagen-principal img{
+    display:none;
+}
 
 .seccion .informacion, .mensaje, .limpiar{
    width: 300px;
@@ -194,7 +197,22 @@ footer h6{
         font-size: 14px;
         font-weight: bold;
     }
+   
     footer{
         margin-top: 97px;
     }
 }
+@media (min-width: 1024px){
+   
+   .imagen-principal img{
+       display:flex;
+       width: 100px;
+   }
+}
+@media (min-width: 1280px){
+   
+    .imagen-principal img{
+        
+        min-width: 300px;
+    }
+ }
